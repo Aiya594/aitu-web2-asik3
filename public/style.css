@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fbc3db;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #7a0f2e;
+  padding: 20px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 800px;
+  margin: 30px auto;
+  background: #f176b1;
+  padding: 25px;
+}
+
+h2 {
+  color: #fefefe;
+  margin-bottom: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+textarea {
+  min-height: 80px;
+}
+
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 5px;
+  background: #d6336c;
+  color: white;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+button:hover {
+  background: #ad1457;
+}
+
+.blog {
+  background: #ff86bd;
+  padding: 15px;
+  margin-top: 15px;
+}
+
+.blog h3 {
+  margin: 0 0 5px;
+  color: #ffffff;
+}
+
+.blog small {
+  color: #ffffff;
+}
+
+.actions {
+  margin-top: 10px;
+}
+
+.delete {
+  background: #8b0000;
+}
+
+.delete:hover {
+  background: #600000;
+}
