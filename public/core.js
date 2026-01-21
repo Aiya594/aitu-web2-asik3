@@ -6,7 +6,11 @@ saveBtn.addEventListener("click", async () => {
   const id = document.getElementById("blogId").value;
   const title = document.getElementById("title").value;
   const body = document.getElementById("body").value;
-  const author = document.getElementById("author").value;
+  var author = document.getElementById("author").value;
+
+  if (author==""){
+    author="Anonymus"
+  }
 
   if (!title || !body) return alert("Title and body are required");
 
