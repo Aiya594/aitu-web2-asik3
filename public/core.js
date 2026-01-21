@@ -67,7 +67,7 @@ async function editBlog(id) {
 }
 
 async function deleteBlog(id) {
-  if (!confirm("Delete this blog?")) return;
+  if (!confirm("Delete this post?")) return;
 
   await fetch(`/blogs/${id}`, {
     method: "DELETE",

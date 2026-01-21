@@ -13,14 +13,15 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "public")));
 
+app.use("/blogs", router)
+
 const mongoURI=process.env.MONGODB_URI
 
 mongoose.connect(mongoURI)
   .then(() => {
-    console.log("MongoDB connected");
+    console.log("Host:", mongoose.connection.host);
     app.listen(PORT, () =>
       console.log(`Server running on http://localhost:${PORT}`)
     );
   }).catch((err) => console.error(err));
 
-  app.use("/blogs", router)

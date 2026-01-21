@@ -1,5 +1,4 @@
 const express = require("express");
-const Blog = require("../models/blog");
 const blogPost = require("../models/blog");
 
 const router = express.Router();
@@ -46,7 +45,6 @@ router.get("/:id", async (req, res) => {
   }
 });
 
-
 router.put("/:id", async (req, res) => {
   const { title, body, author } = req.body;
 
@@ -60,7 +58,7 @@ router.put("/:id", async (req, res) => {
     const updatedPost = await blogPost.findByIdAndUpdate(
       req.params.id,
       { title, body, author },
-      { new: true }
+      { new: true },
     );
 
     if (!updatedPost) {

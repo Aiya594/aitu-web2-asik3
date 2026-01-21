@@ -18,8 +18,7 @@ const blogPost = new mongoose.Schema(
   },
   {
     timestamps: true,
-  }
+  },
 );
 
-module.exports = mongoose.model("blog", blogPost);
-
+module.exports = mongoose.model("blog", blogPost, "posts");
